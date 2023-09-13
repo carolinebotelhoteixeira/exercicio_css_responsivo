@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: palevioletred;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.container h1 {
+    margin-left: 85px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin-right: 80px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a {
+    margin-left: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.sobre {
+    display: flex;
+    margin-left: 85px;
+    margin-top: 15px;
+}
+
+.sobre img {
+    width: 500px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.sobre h2 {
+    color:crimson;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 8px;
+    border-bottom: 2px solid crimson;
+}
+
+.sobre-texto {
+    margin-right: 80px;
+}
+
+.produtos h2 {
+    display: flex;
+    margin-right: 80px;
+    margin-left: 85px;
+    margin-top: 45px;
+    padding: 8px;
+    color:crimson;
+    border-bottom: 2px solid crimson;
+}
+
+.lista-produtos {
+    margin-left: 85px;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(4, 16%);
+    column-gap: 8.2%;
+    row-gap: 3%;
+}
+
+.lista-produtos img {
+    width: 300px;
+    height: 250px;
+    margin-top: 32px;
+}
+
+.lista-produtos h3 {
+    color: black;
+    border-bottom: 0;
+    padding: 8px auto;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.lista-produtos p {
+    width: 250px;
+    margin-bottom: 16px;
+}
+
+button {
+    width: 250px;
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    margin-bottom: 32px;
+    background-color: palevioletred;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 667px) {
+
+body {
+    display: block;
+}
+
+.container {
+    display: block;
+    max-width: 90%;
+}
+
+.menu {
+    display: flex;
+}
+
+.sobre {
+    display: block;
+    max-width: 90%;
+}
+
+.sobre img {
+    max-width: 50%;
+}
+
+.sobre-texto {
+    max-width: 90%;
+}
+
+.produtos h2 {
+    max-width: 90%;
+}
+
+.lista-produtos {
+    display: block;
+    padding: 4px;
+    margin: 4px 4px;
+}
+
+.lista-produtos img {
+    max-width: 70%;
+}
+
+.lista-produtos h3 {
+    max-width: 70%;
+}
+
+.lista-produtos p {
+    max-width: 70%;
+}
+
+button {
+    max-width: 70%;
+}
+
+}
